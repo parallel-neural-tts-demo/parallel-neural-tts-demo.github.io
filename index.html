@@ -8,12 +8,180 @@
   <body>
     <div>
       <h3>Experiment I: </h3>
-      <h3> </h3>    
+      We obtain synthesized speech from WaveNet autoregressive vocoder, ClariNet parallel vocoder, and WaveVAE parallel vocoder.
+      <h3> </h3>  
+
+    <table>
+      <thead>
+        <tr>
+          <th>WaveNet</th>
+          <th>ClariNet</th>
+          <th>WaveVAE</th>
+        </tr>
+      <thead>
+      <tbody>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr>
+          <td><audio controls=""><source src="samples/vocoder/wavenet/u0.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/vocoder/clarinet/u0.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/vocoder/wavevae/u0.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+          <td><audio controls=""><source src="samples/vocoder/wavenet/u1.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/vocoder/clarinet/u1.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/vocoder/wavevae/u1.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+          <td><audio controls=""><source src="samples/vocoder/wavenet/u2.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/vocoder/clarinet/u2.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/vocoder/wavevae/u2.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+          <td><audio controls=""><source src="samples/vocoder/wavenet/u3.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/vocoder/clarinet/u3.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/vocoder/wavevae/u3.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+          <td><audio controls=""><source src="samples/vocoder/wavenet/u4.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/vocoder/clarinet/u4.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/vocoder/wavevae/u4.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+          <td><audio controls=""><source src="samples/vocoder/wavenet/u5.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/vocoder/clarinet/u5.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/vocoder/wavevae/u5.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+          <td><audio controls=""><source src="samples/vocoder/wavenet/u6.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/vocoder/clarinet/u6.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/vocoder/wavevae/u6.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+          <td><audio controls=""><source src="samples/vocoder/wavenet/u7.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/vocoder/clarinet/u7.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/vocoder/wavevae/u7.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+          <td><audio controls=""><source src="samples/vocoder/wavenet/u8.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/vocoder/clarinet/u8.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/vocoder/wavevae/u8.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+          <td><audio controls=""><source src="samples/vocoder/wavenet/u9.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/vocoder/clarinet/u9.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/vocoder/wavevae/u9.wav" type="audio/wav"></audio></td>
+        </tr>
+      </tbody>
+    </table>
+
     </div>
+
     <br> </br>
     <div>
       <h3>Experiment II: </h3>
+      We obtain synthesized speech from the following neural TTS systems: <br>
+      Autoregressive Deep Voice 3 text-to-spectrogram model + autoregressive WaveNet vocoder <br>
+      Non-autoregressive text-to-spectrogram model + autoregressive WaveNet vocoder <br>    
+      Autoregressive Deep Voice 3 text-to-spectrogram model + parallel ClariNet vocoder <br>
+      Non-autoregressive text-to-spectrogram model + parallel ClariNet vocoder <br>
       <h3> </h3>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Deep Voice 3 + WaveNet</th>
+          <th>Non-autoregressive + WaveNet</th>
+          <th>Deep Voice 3 + ClariNet</th>
+          <th>Non-autoregressive + ClariNet</th>
+        </tr>
+      <thead>
+      <tbody>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr>
+          <td><audio controls=""><source src="samples/TTS/auto-seq2seq_wavenet/u0.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/TTS/nonauto-seq2seq_wavenet/u0.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/TTS/auto_seq2seq_clarinet/u0.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/TTS/nonauto-seq2seq_clarinet/u0.wav" type="audio/wav"></audio></td> 
+        </tr>
+        <tr>
+          <td><audio controls=""><source src="samples/TTS/auto-seq2seq_wavenet/u1.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/TTS/nonauto-seq2seq_wavenet/u1.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/TTS/auto_seq2seq_clarinet/u1.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/TTS/nonauto-seq2seq_clarinet/u1.wav" type="audio/wav"></audio></td> 
+        </tr>
+        <tr>
+          <td><audio controls=""><source src="samples/TTS/auto-seq2seq_wavenet/u2.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/TTS/nonauto-seq2seq_wavenet/u2.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/TTS/auto_seq2seq_clarinet/u2.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/TTS/nonauto-seq2seq_clarinet/u2.wav" type="audio/wav"></audio></td> 
+        </tr>
+        <tr>
+          <td><audio controls=""><source src="samples/TTS/auto-seq2seq_wavenet/u3.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/TTS/nonauto-seq2seq_wavenet/u3.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/TTS/auto_seq2seq_clarinet/u3.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/TTS/nonauto-seq2seq_clarinet/u3.wav" type="audio/wav"></audio></td> 
+        </tr>
+        <tr>
+          <td><audio controls=""><source src="samples/TTS/auto-seq2seq_wavenet/u4.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/TTS/nonauto-seq2seq_wavenet/u4.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/TTS/auto_seq2seq_clarinet/u4.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/TTS/nonauto-seq2seq_clarinet/u4.wav" type="audio/wav"></audio></td> 
+        </tr>
+        <tr>
+          <td><audio controls=""><source src="samples/TTS/auto-seq2seq_wavenet/u5.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/TTS/nonauto-seq2seq_wavenet/u5.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/TTS/auto_seq2seq_clarinet/u5.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/TTS/nonauto-seq2seq_clarinet/u5.wav" type="audio/wav"></audio></td> 
+        </tr>
+        <tr>
+          <td><audio controls=""><source src="samples/TTS/auto-seq2seq_wavenet/u6.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/TTS/nonauto-seq2seq_wavenet/u6.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/TTS/auto_seq2seq_clarinet/u6.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/TTS/nonauto-seq2seq_clarinet/u6.wav" type="audio/wav"></audio></td> 
+        </tr>
+        <tr>
+          <td><audio controls=""><source src="samples/TTS/auto-seq2seq_wavenet/u7.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/TTS/nonauto-seq2seq_wavenet/u7.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/TTS/auto_seq2seq_clarinet/u7.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/TTS/nonauto-seq2seq_clarinet/u7.wav" type="audio/wav"></audio></td> 
+        </tr>
+        <tr>
+          <td><audio controls=""><source src="samples/TTS/auto-seq2seq_wavenet/u8.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/TTS/nonauto-seq2seq_wavenet/u8.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/TTS/auto_seq2seq_clarinet/u8.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/TTS/nonauto-seq2seq_clarinet/u8.wav" type="audio/wav"></audio></td> 
+        </tr>
+        <tr>
+          <td><audio controls=""><source src="samples/TTS/auto-seq2seq_wavenet/u9.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/TTS/nonauto-seq2seq_wavenet/u9.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/TTS/auto_seq2seq_clarinet/u9.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/TTS/nonauto-seq2seq_clarinet/u9.wav" type="audio/wav"></audio></td> 
+        </tr>
+        <tr>
+          <td><audio controls=""><source src="samples/TTS/auto-seq2seq_wavenet/u10.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/TTS/nonauto-seq2seq_wavenet/u10.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/TTS/auto_seq2seq_clarinet/u10.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/TTS/nonauto-seq2seq_clarinet/u10.wav" type="audio/wav"></audio></td> 
+        </tr>
+        <tr>
+          <td><audio controls=""><source src="samples/TTS/auto-seq2seq_wavenet/u11.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/TTS/nonauto-seq2seq_wavenet/u11.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/TTS/auto_seq2seq_clarinet/u11.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/TTS/nonauto-seq2seq_clarinet/u11.wav" type="audio/wav"></audio></td> 
+        </tr>
+        <tr>
+          <td><audio controls=""><source src="samples/TTS/auto-seq2seq_wavenet/u12.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/TTS/nonauto-seq2seq_wavenet/u12.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/TTS/auto_seq2seq_clarinet/u12.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/TTS/nonauto-seq2seq_clarinet/u12.wav" type="audio/wav"></audio></td> 
+        </tr>
+      </tbody>
+    </table>
+
     </div>
   </body>
 </html>
