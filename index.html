@@ -235,6 +235,62 @@
       </tbody>
     </table>
 
+    <br> </br>
+    <div>
+      <h3>Experiment III: Attention stability</h3>
+      For autoregressive teacher, there is a noticeable discrepancy between teacher-forced training and autoregressive inference. <br> 
+      The attention errors arise at autoregressive inference, because the minor errors generated at previous frames would compound to greater errors at later frames. <br> 
+      The non-autoregressive student model doesn't have such discrepancy, and learns the (golden) teacher-forced attentions from teacher model. <br>
+      See the following examples on test sentences:
+      <h3> </h3>
+
+    <table align="center">
+      <thead>
+        <tr>
+          <th>Deep Voice 3</th>
+          <th>Non-autoregressive</th>
+        </tr>
+      <thead>
+      <tbody>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr>
+          <td colspan="4"><span>1: Autumn is my favourite season.</td></span>
+        </tr>
+        <tr>
+          <td><audio controls style="display:block;margin:auto; text-align: center"><source src="samples/atten/4_auto.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="display:block;margin:auto; text-align: center"><source src="samples/atten/4_nonauto.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+          <td><img src="samples/atten/auto_u4.png" style="width:320px;height:250px"></td>
+          <td><img src="samples/atten/nonauto_u4.png" style="width:1000px;height:250px"></td>
+        </tr>
+        <tr>
+          <td colspan="4"><span>2: The broader military presence was not meant to provoke conflict with Chinese.</td></span>
+        </tr>
+        <tr>
+          <td><audio controls style="display:block;margin:auto; text-align: center"><source src="samples/atten/5_auto.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="display:block;margin:auto; text-align: center"><source src="samples/atten/5_nonauto.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+          <td><img src="samples/atten/auto_u5.png" style="width:320px;height:250px"></td>
+          <td><img src="samples/atten/nonauto_u5.png" style="width:1000px;height:250px"></td>
+        </tr>
+        <tr>
+          <td colspan="4"><span>3: A rocket from Space X interacts with the individual beneath the soft flaw.</td></span>
+        </tr>
+        <tr>
+          <td><audio controls style="display:block;margin:auto; text-align: center"><source src="samples/atten/7_auto.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="display:block;margin:auto; text-align: center"><source src="samples/atten/7_nonauto.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+          <td><img src="samples/atten/auto_u7.png" style="width:320px;height:250px"></td>
+          <td><img src="samples/atten/nonauto_u7.png" style="width:1000px;height:250px"></td>
+        </tr>
+      </tbody>
+    </table>
+
     </div>
   </body>
 </html>
