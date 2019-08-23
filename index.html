@@ -210,7 +210,7 @@
     <br> </br>
     <div>
       <h3>Section III: Attention stability</h3>
-      For autoregressive seq2seq model, there is a noticeable discrepancy between teacher-forced training and autoregressive inference. The attention errors arise at autoregressive inference, because the minor errors generated at previous frames would compound to greater errors at later frames. The non-autoregressive ParaNet doesn't have such discrepancy. In practice, the autoregressive seq2seq model may have serious attention errors for a few bad cases, while the non-autoregressive ParaNet generally has more stable attention. See the following bad cases on test sentences:
+      For autoregressive seq2seq model, there is a noticeable discrepancy between teacher-forced training and autoregressive inference. The attention errors arise at autoregressive inference, because the minor errors generated at previous frames would compound to greater errors at later frames. The non-autoregressive ParaNet doesn't have such discrepancy. In practice, when attention masking is not applied at synthesis, the autoregressive seq2seq model may have serious attention errors for a few bad cases. In comparison, the non-autoregressive ParaNet generally has more stable attention. See the following bad cases on test sentences (without applying attention masking at synthesis):
       <h3> </h3>
 
     <table>
