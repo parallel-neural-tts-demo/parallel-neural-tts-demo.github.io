@@ -7,18 +7,15 @@
 
   <body>
     <div>
-      <h3>Section I: IAF-based parallel wave generation conditioned on mel-spectrogram</h3>
-      We obtain synthesized speech from autoregressive WaveNet, parallel ClariNet and WaveVAE.
+      <h3>Section I: Speech quality</h3>
+      We obtain synthesized speech from Deep Voice 3 and ParaNet both using autoregressive WaveNet as vocoder.
       <h3> </h3>  
 
     <table>
       <thead>
         <tr>
-          <th>Ground Truth</th>
-          <th>WaveNet</th>
-          <th>ClariNet</th>
-          <th>WaveVAE (recons.)</th>
-          <th>WaveVAE (prior)</th>
+          <th align="center">Deep Voice 3 + WaveNet</th>
+          <th align="center">ParaNet + WaveNet</th>
         </tr>
       <thead>
       <tbody>
@@ -26,54 +23,67 @@
         <tr></tr>
         <tr></tr>
         <tr>
-          <td colspan="4"><span>1: Of course, once I became a full time musician, I discovered that many of those hard working, dedicated professionals also happened to be miscreant winos.</td></span>
+          <td colspan="2"><span>1: Ask her to bring these things with her from the store.</td></span>
+        </tr>
+        <tr align="center">
+          <td><audio controls style="width: 300px;"><source src="samples/TTS/auto-seq2seq_wavenet/u1.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 300px;"><source src="samples/TTS/nonauto-seq2seq_wavenet/u1.wav" type="audio/wav"></audio></td>
         </tr>
         <tr>
-          <td><audio controls style="width: 285px;"><source src="samples/vocoder/groundtruth/u1.wav" type="audio/wav"></audio></td>
-          <td><audio controls style="width: 285px;"><source src="samples/vocoder/wavenet/u1.wav" type="audio/wav"></audio></td>
-          <td><audio controls style="width: 285px;"><source src="samples/vocoder/clarinet/u1.wav" type="audio/wav"></audio></td>
-          <td><audio controls style="width: 285px;"><source src="samples/vocoder/wavevae_recons/u1.wav" type="audio/wav"></audio></td>
-          <td><audio controls style="width: 285px;"><source src="samples/vocoder/wavevae/u1.wav" type="audio/wav"></audio></td>
+          <td colspan="2"><span>2: We also need a small plastic snake and a big toy frog for the kids.</td></span>
+        </tr>
+        <tr align="center">
+          <td><audio controls style="width: 300px;"><source src="samples/TTS/auto-seq2seq_wavenet/u3.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 300px;"><source src="samples/TTS/nonauto-seq2seq_wavenet/u3.wav" type="audio/wav"></audio></td>
         </tr>
         <tr>
-          <td colspan="4"><span>2: Frozen, thawed cherries can be used in pies or be put in smoothies , but cherries can also be used in savory dishes.</td></span>
+          <td colspan="2"><span>3: When the sunlight strikes raindrops in the air they act as a prism and form a rainbow.</td></span>
+        </tr>
+        <tr align="center">
+          <td><audio controls style="width: 300px;"><source src="samples/TTS/auto-seq2seq_wavenet/u5.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 300px;"><source src="samples/TTS/nonauto-seq2seq_wavenet/u5.wav" type="audio/wav"></audio></td>
         </tr>
         <tr>
-          <td><audio controls style="width: 285px;"><source src="samples/vocoder/groundtruth/u2.wav" type="audio/wav"></audio></td>
-          <td><audio controls style="width: 285px;"><source src="samples/vocoder/wavenet/u2.wav" type="audio/wav"></audio></td>
-          <td><audio controls style="width: 285px;"><source src="samples/vocoder/clarinet/u2.wav" type="audio/wav"></audio></td>
-          <td><audio controls style="width: 285px;"><source src="samples/vocoder/wavevae_recons/u2.wav" type="audio/wav"></audio></td>
-          <td><audio controls style="width: 285px;"><source src="samples/vocoder/wavevae/u2.wav" type="audio/wav"></audio></td>
+          <td colspan="2"><span>4: The rainbow is a division of white light into many beautiful colors.</td></span>
+        </tr>
+        <tr align="center">
+          <td><audio controls style="width: 300px;"><source src="samples/TTS/auto-seq2seq_wavenet/u6.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 300px;"><source src="samples/TTS/nonauto-seq2seq_wavenet/u6.wav" type="audio/wav"></audio></td>
         </tr>
         <tr>
-          <td colspan="4"><span>3: But bullies are like termites.</td></span>
+          <td colspan="2"><span>5: There is according to legend a boiling pot of gold at one end.</td></span>
+        </tr>
+        <tr align="center">
+          <td><audio controls style="width: 300px;"><source src="samples/TTS/auto-seq2seq_wavenet/u8.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 300px;"><source src="samples/TTS/nonauto-seq2seq_wavenet/u8.wav" type="audio/wav"></audio></td>
         </tr>
         <tr>
-          <td><audio controls style="width: 285px;"><source src="samples/vocoder/groundtruth/u3.wav" type="audio/wav"></audio></td>
-          <td><audio controls style="width: 285px;"><source src="samples/vocoder/wavenet/u3.wav" type="audio/wav"></audio></td>
-          <td><audio controls style="width: 285px;"><source src="samples/vocoder/clarinet/u3.wav" type="audio/wav"></audio></td>
-          <td><audio controls style="width: 285px;"><source src="samples/vocoder/wavevae_recons/u3.wav" type="audio/wav"></audio></td>
-          <td><audio controls style="width: 285px;"><source src="samples/vocoder/wavevae/u3.wav" type="audio/wav"></audio></td>
+          <td colspan="2"><span>6: People look but no one ever finds it.</td></span>
+        </tr>
+        <tr align="center">
+          <td><audio controls style="width: 300px;"><source src="samples/TTS/auto-seq2seq_wavenet/u9.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 300px;"><source src="samples/TTS/nonauto-seq2seq_wavenet/u9.wav" type="audio/wav"></audio></td>
         </tr>
         <tr>
-          <td colspan="4"><span>4: Symptoms may occur when the aneurysm grows or disrupts the wall of the aorta.</td></span>
+          <td colspan="2"><span>7: When a man looks for something beyond his reach his friends say he is looking for the pot of gold at the end of the rainbow.</td></span>
+        </tr>
+        <tr align="center">
+          <td><audio controls style="width: 300px;"><source src="samples/TTS/auto-seq2seq_wavenet/u10.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 300px;"><source src="samples/TTS/nonauto-seq2seq_wavenet/u10.wav" type="audio/wav"></audio></td>
         </tr>
         <tr>
-          <td><audio controls style="width: 285px;"><source src="samples/vocoder/groundtruth/u4.wav" type="audio/wav"></audio></td>
-          <td><audio controls style="width: 285px;"><source src="samples/vocoder/wavenet/u4.wav" type="audio/wav"></audio></td>
-          <td><audio controls style="width: 285px;"><source src="samples/vocoder/clarinet/u4.wav" type="audio/wav"></audio></td>
-          <td><audio controls style="width: 285px;"><source src="samples/vocoder/wavevae_recons/u4.wav" type="audio/wav"></audio></td>
-          <td><audio controls style="width: 285px;"><source src="samples/vocoder/wavevae/u4.wav" type="audio/wav"></audio></td>
+          <td colspan="2"><span>8: Throughout the centuries people have explained the rainbow in various ways.</td></span>
+        </tr>
+        <tr align="center">
+          <td><audio controls style="width: 300px;"><source src="samples/TTS/auto-seq2seq_wavenet/u11.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 300px;"><source src="samples/TTS/nonauto-seq2seq_wavenet/u11.wav" type="audio/wav"></audio></td>
         </tr>
         <tr>
-          <td colspan="4"><span>5: It is the purpose of antitrust law to look to the future.</td></span>
+          <td colspan="2"><span>9: Some have accepted it as a miracle without physical explanation.</td></span>
         </tr>
-        <tr>
-          <td><audio controls style="width: 285px;"><source src="samples/vocoder/groundtruth/u5.wav" type="audio/wav"></audio></td>
-          <td><audio controls style="width: 285px;"><source src="samples/vocoder/wavenet/u5.wav" type="audio/wav"></audio></td>
-          <td><audio controls style="width: 285px;"><source src="samples/vocoder/clarinet/u5.wav" type="audio/wav"></audio></td>
-          <td><audio controls style="width: 285px;"><source src="samples/vocoder/wavevae_recons/u5.wav" type="audio/wav"></audio></td>
-          <td><audio controls style="width: 285px;"><source src="samples/vocoder/wavevae/u5.wav" type="audio/wav"></audio></td>
+        <tr align="center">
+          <td><audio controls style="width: 300px;"><source src="samples/TTS/auto-seq2seq_wavenet/u12.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 300px;"><source src="samples/TTS/nonauto-seq2seq_wavenet/u12.wav" type="audio/wav"></audio></td>
         </tr>
       </tbody>
     </table>
@@ -82,21 +92,21 @@
 
     <br> </br>
     <div>
-      <h3>Section II: Text-to-Speech</h3>
+      <h3>Section II: TTS system with parallel vocoder</h3>
       For text-to-spectrogram model, we have two options: autoregressive Deep Voice 3 and non-autoregressive ParaNet model. 
-      For neural vocoder, we have three options: autoregressive WaveNet, parallel ClariNet and WaveVAE. 
-      We obtain synthesized speech from the following six neural TTS systems by pairing a text-to-spectrogram model with a neural vocoder: <br>
+      For parallel neural vocoder, we have three options: distilled IAF vocoder, WaveVAE, and WaveGlow. 
+      We obtain synthesized speech from the following six neural TTS systems by pairing a text-to-spectrogram model with a parallel neural vocoder: <br>
       <h3> </h3>
 
     <table>
       <thead>
         <tr>
-          <th>Deep Voice 3 + WaveNet</th>
-          <th>ParaNet + WaveNet</th>
-          <th>Deep Voice 3 + ClariNet</th>
-          <th>ParaNet + ClariNet</th>
-          <th>Deep Voice 3 + WaveVAE</th>
-          <th>ParaNet + WaveVAE</th>
+          <th align="center">Deep Voice 3 + distilled IAF</th>
+          <th align="center">ParaNet + distilled IAF</th>
+          <th align="center">Deep Voice 3 + WaveVAE</th>
+          <th align="center">ParaNet + WaveVAE</th>
+          <th align="center">Deep Voice 3 + WaveGlow</th>
+          <th align="center">ParaNet + WaveGlow</th>
         </tr>
       <thead>
       <tbody>
@@ -104,103 +114,103 @@
         <tr></tr>
         <tr></tr>
         <tr>
-          <td colspan="4"><span>1: Ask her to bring these things with her from the store.</td></span>
+          <td colspan="6"><span>1: Ask her to bring these things with her from the store.</td></span>
         </tr>
-        <tr>
-          <td><audio controls style="width: 265px;"><source src="samples/TTS/auto-seq2seq_wavenet/u1.wav" type="audio/wav"></audio></td>
-          <td><audio controls style="width: 265px;"><source src="samples/TTS/nonauto-seq2seq_wavenet/u1.wav" type="audio/wav"></audio></td>
+        <tr align="center">
           <td><audio controls style="width: 265px;"><source src="samples/TTS/auto_seq2seq_clarinet/u1.wav" type="audio/wav"></audio></td>
           <td><audio controls style="width: 265px;"><source src="samples/TTS/nonauto-seq2seq_clarinet/u1.wav" type="audio/wav"></audio></td> 
           <td><audio controls style="width: 265px;"><source src="samples/TTS/auto_wavevae/u1.wav" type="audio/wav"></audio></td>
           <td><audio controls style="width: 265px;"><source src="samples/TTS/nonauto_wavevae/u1.wav" type="audio/wav"></audio></td> 
+          <td><audio controls style="width: 265px;"><source src="samples/TTS/auto_waveglow/u1.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 265px;"><source src="samples/TTS/nonauto_waveglow/u1.wav" type="audio/wav"></audio></td> 
         </tr>
         <tr>
-          <td colspan="4"><span>2: We also need a small plastic snake and a big toy frog for the kids.</td></span>
+          <td colspan="6"><span>2: We also need a small plastic snake and a big toy frog for the kids.</td></span>
         </tr>
-        <tr>
-          <td><audio controls style="width: 265px;"><source src="samples/TTS/auto-seq2seq_wavenet/u3.wav" type="audio/wav"></audio></td>
-          <td><audio controls style="width: 265px;"><source src="samples/TTS/nonauto-seq2seq_wavenet/u3.wav" type="audio/wav"></audio></td>
+        <tr align="center">
           <td><audio controls style="width: 265px;"><source src="samples/TTS/auto_seq2seq_clarinet/u3.wav" type="audio/wav"></audio></td>
-          <td><audio controls style="width: 265px;"><source src="samples/TTS/nonauto-seq2seq_clarinet/u3.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 265px;"><source src="samples/TTS/nonauto-seq2seq_clarinet/u3.wav" type="audio/wav"></audio></td> 
           <td><audio controls style="width: 265px;"><source src="samples/TTS/auto_wavevae/u3.wav" type="audio/wav"></audio></td>
-          <td><audio controls style="width: 265px;"><source src="samples/TTS/nonauto_wavevae/u3.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 265px;"><source src="samples/TTS/nonauto_wavevae/u3.wav" type="audio/wav"></audio></td> 
+          <td><audio controls style="width: 265px;"><source src="samples/TTS/auto_waveglow/u3.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 265px;"><source src="samples/TTS/nonauto_waveglow/u3.wav" type="audio/wav"></audio></td> 
         </tr>
         <tr>
-          <td colspan="4"><span>3: When the sunlight strikes raindrops in the air they act as a prism and form a rainbow.</td></span>
+          <td colspan="6"><span>3: When the sunlight strikes raindrops in the air they act as a prism and form a rainbow.</td></span>
         </tr>
-        <tr>
-          <td><audio controls style="width: 265px;"><source src="samples/TTS/auto-seq2seq_wavenet/u5.wav" type="audio/wav"></audio></td>
-          <td><audio controls style="width: 265px;"><source src="samples/TTS/nonauto-seq2seq_wavenet/u5.wav" type="audio/wav"></audio></td>
+        <tr align="center">
           <td><audio controls style="width: 265px;"><source src="samples/TTS/auto_seq2seq_clarinet/u5.wav" type="audio/wav"></audio></td>
-          <td><audio controls style="width: 265px;"><source src="samples/TTS/nonauto-seq2seq_clarinet/u5.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 265px;"><source src="samples/TTS/nonauto-seq2seq_clarinet/u5.wav" type="audio/wav"></audio></td> 
           <td><audio controls style="width: 265px;"><source src="samples/TTS/auto_wavevae/u5.wav" type="audio/wav"></audio></td>
-          <td><audio controls style="width: 265px;"><source src="samples/TTS/nonauto_wavevae/u5.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 265px;"><source src="samples/TTS/nonauto_wavevae/u5.wav" type="audio/wav"></audio></td> 
+          <td><audio controls style="width: 265px;"><source src="samples/TTS/auto_waveglow/u5.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 265px;"><source src="samples/TTS/nonauto_waveglow/u5.wav" type="audio/wav"></audio></td> 
         </tr>
         <tr>
-          <td colspan="4"><span>4: The rainbow is a division of white light into many beautiful colors.</td></span>
+          <td colspan="6"><span>4: The rainbow is a division of white light into many beautiful colors.</td></span>
         </tr>
-        <tr>
-          <td><audio controls style="width: 265px;"><source src="samples/TTS/auto-seq2seq_wavenet/u6.wav" type="audio/wav"></audio></td>
-          <td><audio controls style="width: 265px;"><source src="samples/TTS/nonauto-seq2seq_wavenet/u6.wav" type="audio/wav"></audio></td>
+        <tr align="center">
           <td><audio controls style="width: 265px;"><source src="samples/TTS/auto_seq2seq_clarinet/u6.wav" type="audio/wav"></audio></td>
-          <td><audio controls style="width: 265px;"><source src="samples/TTS/nonauto-seq2seq_clarinet/u6.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 265px;"><source src="samples/TTS/nonauto-seq2seq_clarinet/u6.wav" type="audio/wav"></audio></td> 
           <td><audio controls style="width: 265px;"><source src="samples/TTS/auto_wavevae/u6.wav" type="audio/wav"></audio></td>
           <td><audio controls style="width: 265px;"><source src="samples/TTS/nonauto_wavevae/u6.wav" type="audio/wav"></audio></td> 
+          <td><audio controls style="width: 265px;"><source src="samples/TTS/auto_waveglow/u6.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 265px;"><source src="samples/TTS/nonauto_waveglow/u6.wav" type="audio/wav"></audio></td> 
         </tr>
         <tr>
-          <td colspan="4"><span>5: There is according to legend a boiling pot of gold at one end.</td></span>
+          <td colspan="6"><span>5: There is according to legend a boiling pot of gold at one end.</td></span>
         </tr>
-        <tr>
-          <td><audio controls style="width: 265px;"><source src="samples/TTS/auto-seq2seq_wavenet/u8.wav" type="audio/wav"></audio></td>
-          <td><audio controls style="width: 265px;"><source src="samples/TTS/nonauto-seq2seq_wavenet/u8.wav" type="audio/wav"></audio></td>
+        <tr align="center">
           <td><audio controls style="width: 265px;"><source src="samples/TTS/auto_seq2seq_clarinet/u8.wav" type="audio/wav"></audio></td>
-          <td><audio controls style="width: 265px;"><source src="samples/TTS/nonauto-seq2seq_clarinet/u8.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 265px;"><source src="samples/TTS/nonauto-seq2seq_clarinet/u8.wav" type="audio/wav"></audio></td> 
           <td><audio controls style="width: 265px;"><source src="samples/TTS/auto_wavevae/u8.wav" type="audio/wav"></audio></td>
-          <td><audio controls style="width: 265px;"><source src="samples/TTS/nonauto_wavevae/u8.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 265px;"><source src="samples/TTS/nonauto_wavevae/u8.wav" type="audio/wav"></audio></td> 
+          <td><audio controls style="width: 265px;"><source src="samples/TTS/auto_waveglow/u8.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 265px;"><source src="samples/TTS/nonauto_waveglow/u8.wav" type="audio/wav"></audio></td> 
         </tr>
         <tr>
-          <td colspan="4"><span>6: People look but no one ever finds it.</td></span>
+          <td colspan="6"><span>6: People look but no one ever finds it.</td></span>
         </tr>
-        <tr>
-          <td><audio controls style="width: 265px;"><source src="samples/TTS/auto-seq2seq_wavenet/u9.wav" type="audio/wav"></audio></td>
-          <td><audio controls style="width: 265px;"><source src="samples/TTS/nonauto-seq2seq_wavenet/u9.wav" type="audio/wav"></audio></td>
+        <tr align="center">
           <td><audio controls style="width: 265px;"><source src="samples/TTS/auto_seq2seq_clarinet/u9.wav" type="audio/wav"></audio></td>
-          <td><audio controls style="width: 265px;"><source src="samples/TTS/nonauto-seq2seq_clarinet/u9.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 265px;"><source src="samples/TTS/nonauto-seq2seq_clarinet/u9.wav" type="audio/wav"></audio></td> 
           <td><audio controls style="width: 265px;"><source src="samples/TTS/auto_wavevae/u9.wav" type="audio/wav"></audio></td>
-          <td><audio controls style="width: 265px;"><source src="samples/TTS/nonauto_wavevae/u9.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 265px;"><source src="samples/TTS/nonauto_wavevae/u9.wav" type="audio/wav"></audio></td> 
+          <td><audio controls style="width: 265px;"><source src="samples/TTS/auto_waveglow/u9.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 265px;"><source src="samples/TTS/nonauto_waveglow/u9.wav" type="audio/wav"></audio></td> 
         </tr>
         <tr>
-          <td colspan="4"><span>7: When a man looks for something beyond his reach his friends say he is looking for the pot of gold at the end of the rainbow.</td></span>
+          <td colspan="6"><span>7: When a man looks for something beyond his reach his friends say he is looking for the pot of gold at the end of the rainbow.</td></span>
         </tr>
-        <tr>
-          <td><audio controls style="width: 265px;"><source src="samples/TTS/auto-seq2seq_wavenet/u10.wav" type="audio/wav"></audio></td>
-          <td><audio controls style="width: 265px;"><source src="samples/TTS/nonauto-seq2seq_wavenet/u10.wav" type="audio/wav"></audio></td>
+        <tr align="center">
           <td><audio controls style="width: 265px;"><source src="samples/TTS/auto_seq2seq_clarinet/u10.wav" type="audio/wav"></audio></td>
-          <td><audio controls style="width: 265px;"><source src="samples/TTS/nonauto-seq2seq_clarinet/u10.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 265px;"><source src="samples/TTS/nonauto-seq2seq_clarinet/u10.wav" type="audio/wav"></audio></td> 
           <td><audio controls style="width: 265px;"><source src="samples/TTS/auto_wavevae/u10.wav" type="audio/wav"></audio></td>
           <td><audio controls style="width: 265px;"><source src="samples/TTS/nonauto_wavevae/u10.wav" type="audio/wav"></audio></td> 
+          <td><audio controls style="width: 265px;"><source src="samples/TTS/auto_waveglow/u10.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 265px;"><source src="samples/TTS/nonauto_waveglow/u10.wav" type="audio/wav"></audio></td> 
         </tr>
         <tr>
-          <td colspan="4"><span>8: Throughout the centuries people have explained the rainbow in various ways.</td></span>
+          <td colspan="6"><span>8: Throughout the centuries people have explained the rainbow in various ways.</td></span>
         </tr>
-        <tr>
-          <td><audio controls style="width: 265px;"><source src="samples/TTS/auto-seq2seq_wavenet/u11.wav" type="audio/wav"></audio></td>
-          <td><audio controls style="width: 265px;"><source src="samples/TTS/nonauto-seq2seq_wavenet/u11.wav" type="audio/wav"></audio></td>
+        <tr align="center">
           <td><audio controls style="width: 265px;"><source src="samples/TTS/auto_seq2seq_clarinet/u11.wav" type="audio/wav"></audio></td>
-          <td><audio controls style="width: 265px;"><source src="samples/TTS/nonauto-seq2seq_clarinet/u11.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 265px;"><source src="samples/TTS/nonauto-seq2seq_clarinet/u11.wav" type="audio/wav"></audio></td> 
           <td><audio controls style="width: 265px;"><source src="samples/TTS/auto_wavevae/u11.wav" type="audio/wav"></audio></td>
           <td><audio controls style="width: 265px;"><source src="samples/TTS/nonauto_wavevae/u11.wav" type="audio/wav"></audio></td> 
+          <td><audio controls style="width: 265px;"><source src="samples/TTS/auto_waveglow/u11.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 265px;"><source src="samples/TTS/nonauto_waveglow/u11.wav" type="audio/wav"></audio></td> 
         </tr>
         <tr>
-          <td colspan="4"><span>9: Some have accepted it as a miracle without physical explanation.</td></span>
+          <td colspan="6"><span>9: Some have accepted it as a miracle without physical explanation.</td></span>
         </tr>
-        <tr>
-          <td><audio controls style="width: 265px;"><source src="samples/TTS/auto-seq2seq_wavenet/u12.wav" type="audio/wav"></audio></td>
-          <td><audio controls style="width: 265px;"><source src="samples/TTS/nonauto-seq2seq_wavenet/u12.wav" type="audio/wav"></audio></td>
+        <tr align="center">
           <td><audio controls style="width: 265px;"><source src="samples/TTS/auto_seq2seq_clarinet/u12.wav" type="audio/wav"></audio></td>
-          <td><audio controls style="width: 265px;"><source src="samples/TTS/nonauto-seq2seq_clarinet/u12.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 265px;"><source src="samples/TTS/nonauto-seq2seq_clarinet/u12.wav" type="audio/wav"></audio></td> 
           <td><audio controls style="width: 265px;"><source src="samples/TTS/auto_wavevae/u12.wav" type="audio/wav"></audio></td>
           <td><audio controls style="width: 265px;"><source src="samples/TTS/nonauto_wavevae/u12.wav" type="audio/wav"></audio></td> 
+          <td><audio controls style="width: 265px;"><source src="samples/TTS/auto_waveglow/u12.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 265px;"><source src="samples/TTS/nonauto_waveglow/u12.wav" type="audio/wav"></audio></td> 
         </tr>
       </tbody>
     </table>
@@ -209,51 +219,7 @@
 
     <br> </br>
     <div>
-      <h3>Section III: Attention stability</h3>
-      For autoregressive seq2seq model, there is a noticeable discrepancy between teacher-forced training and autoregressive inference. The attention errors arise at autoregressive inference, because the minor errors generated at previous frames would compound to greater errors at later frames. The non-autoregressive ParaNet doesn't have such discrepancy. In practice, when attention masking is not applied at synthesis, the autoregressive seq2seq model may have serious attention errors for a few bad cases. In comparison, the non-autoregressive ParaNet generally has more stable attention. See the following bad cases on test sentences (without applying attention masking at synthesis):
-      <h3> </h3>
-
-    <table>
-      <thead>
-        <tr>
-          <th>Deep Voice 3</th>
-          <th>ParaNet</th>
-        </tr>
-      <thead>
-      <tbody>
-        <tr></tr>
-        <tr></tr>
-        <tr></tr>
-        <tr>
-          <td colspan="2"><span>1: The broader military presence was not meant to provoke conflict with Chinese.</td></span>
-        </tr>
-        <tr>
-          <td><audio controls style="display:block;margin:auto;text-align:center"><source src="samples/atten/5_auto.wav" type="audio/wav"></audio></td>
-          <td><audio controls style="display:block;margin:auto;text-align:center"><source src="samples/atten/5_nonauto.wav" type="audio/wav"></audio></td>
-        </tr>
-        <tr>
-          <td><img src="samples/atten/auto_u5.png" style="width:310px;height:240px"></td>
-          <td><img src="samples/atten/nonauto_u5.png" style="width:960px;height:240px;margin-left:140"></td>
-        </tr>
-        <tr>
-          <td colspan="2"><span>2: A rocket from Space X interacts with the individual beneath the soft flaw.</td></span>
-        </tr>
-        <tr>
-          <td><audio controls style="display:block;margin:auto;text-align:center"><source src="samples/atten/7_auto.wav" type="audio/wav"></audio></td>
-          <td><audio controls style="display:block;margin:auto;text-align:center"><source src="samples/atten/7_nonauto.wav" type="audio/wav"></audio></td>
-        </tr>
-        <tr>
-          <td><img src="samples/atten/auto_u7.png" style="width:310px;height:240px"></td>
-          <td><img src="samples/atten/nonauto_u7.png" style="width:960px;height:240px;margin-left:140"></td>
-        </tr>
-      </tbody>
-    </table>
-
-    </div>
-
-    <br> </br>
-    <div>
-      <h3>Section IV: Controlling the rate of speech</h3>
+      <h3>Section III: Controlling the rate of speech</h3>
       The non-autoregressive ParaNet can synthesize speech with different speech rates by specifying the position encoding rate and the length of output spectrogram, accordingly. See the following synthesized speech examples with slow, normal, and fast speech rates, respectively. We use Griffin-Lim algorithm as the vocoder.
       <h3> </h3>
 
