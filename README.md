@@ -1,2 +1,2 @@
 # parallel-neural-tts-demo.github.io
-Audio Demo for "Parallel Neural Text-to-Speech"
+Audio Demo for "Non-Autoregressive Neural Text-to-Speech"
