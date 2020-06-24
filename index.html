@@ -8,7 +8,7 @@
   <body>
     <div>
       <h3>Section I: Speech quality using various neural vocoders</h3>
-      We obtain synthesized speech from Deep Voice 3 and ParaNet using various neural vocoders, including WaveNet, distilled IAF vocoder, WaveVAE, and WaveGlow. For reference, we also include some ground truth audios from our proprietary training dataset. Note that each ground truth audio contains different content than the text displayed immediately above it.
+      We obtain synthesized speech from Deep Voice 3 and ParaNet using various neural vocoders, including WaveNet, distilled IAF vocoder, WaveVAE, and WaveGlow. We also obtain synthesized samples from a FastSpeech model (based on a reimplementation on GitHub: https://github.com/xcmyz/FastSpeech) using the WaveGlow vocoder. For reference, we include some ground truth audios from our proprietary training dataset. Note that each ground truth audio contains different content than the text displayed immediately above it.
       <h3> </h3>  
 
     <table>
@@ -175,6 +175,7 @@
         <tr>
           <th align="center">Deep Voice 3 + WaveGlow</th>
           <th align="center">ParaNet + WaveGlow</th>
+          <th align="center">FastSpeech + WaveGlow</th>
         </tr>
       <thead>
       <tbody>
@@ -186,7 +187,8 @@
         </tr>
         <tr align="center">
           <td><audio controls style="width: 300px;"><source src="samples/TTS/auto_waveglow/u1.wav" type="audio/wav"></audio></td>
-          <td><audio controls style="width: 300px;"><source src="samples/TTS/nonauto_waveglow/u1.wav" type="audio/wav"></audio></td> 
+          <td><audio controls style="width: 300px;"><source src="samples/TTS/nonauto_waveglow/u1.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 300px;"><source src="samples/TTS/fastspeech_waveglow/u1.wav" type="audio/wav"></audio></td>
         </tr>
         <tr>
           <td colspan="6"><span>2: We also need a small plastic snake and a big toy frog for the kids.</td></span>
@@ -194,27 +196,31 @@
         <tr align="center">
           <td><audio controls style="width: 300px;"><source src="samples/TTS/auto_waveglow/u3.wav" type="audio/wav"></audio></td>
           <td><audio controls style="width: 300px;"><source src="samples/TTS/nonauto_waveglow/u3.wav" type="audio/wav"></audio></td> 
+          <td><audio controls style="width: 300px;"><source src="samples/TTS/fastspeech_waveglow/u3.wav" type="audio/wav"></audio></td>
         </tr>
         <tr>
           <td colspan="6"><span>3: The rainbow is a division of white light into many beautiful colors.</td></span>
         </tr>
         <tr align="center">
           <td><audio controls style="width: 300px;"><source src="samples/TTS/auto_waveglow/u6.wav" type="audio/wav"></audio></td>
-          <td><audio controls style="width: 300px;"><source src="samples/TTS/nonauto_waveglow/u6.wav" type="audio/wav"></audio></td> 
+          <td><audio controls style="width: 300px;"><source src="samples/TTS/nonauto_waveglow/u6.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 300px;"><source src="samples/TTS/fastspeech_waveglow/u6.wav" type="audio/wav"></audio></td>
         </tr>
         <tr>
           <td colspan="6"><span>4: People look but no one ever finds it.</td></span>
         </tr>
         <tr align="center">
           <td><audio controls style="width: 300px;"><source src="samples/TTS/auto_waveglow/u9.wav" type="audio/wav"></audio></td>
-          <td><audio controls style="width: 300px;"><source src="samples/TTS/nonauto_waveglow/u9.wav" type="audio/wav"></audio></td> 
+          <td><audio controls style="width: 300px;"><source src="samples/TTS/nonauto_waveglow/u9.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 300px;"><source src="samples/TTS/fastspeech_waveglow/u9.wav" type="audio/wav"></audio></td>
         </tr>
         <tr>
           <td colspan="6"><span>5: Throughout the centuries people have explained the rainbow in various ways.</td></span>
         </tr>
         <tr align="center">
           <td><audio controls style="width: 300px;"><source src="samples/TTS/auto_waveglow/u11.wav" type="audio/wav"></audio></td>
-          <td><audio controls style="width: 300px;"><source src="samples/TTS/nonauto_waveglow/u11.wav" type="audio/wav"></audio></td> 
+          <td><audio controls style="width: 300px;"><source src="samples/TTS/nonauto_waveglow/u11.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 300px;"><source src="samples/TTS/fastspeech_waveglow/u11.wav" type="audio/wav"></audio></td>
         </tr>
       </tbody>
     </table>
